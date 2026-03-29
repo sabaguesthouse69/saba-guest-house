@@ -129,6 +129,9 @@
             <div class="note">
               <div><b>Check-in:</b> 12:00 PM • <b>Check-out:</b> 11:00 AM</div>
               <div><b>Max guests:</b> 2 per room. <b>Extra guest:</b> ₹500 per guest per night (mattress).</div>
+              <div><b>Minimum advance:</b> 40% advance is required to book a room.</div>
+              <div><b>Advance policy:</b> once paid, advance cannot be refunded back and will be adjusted in the room rent.</div>
+              <div><b>No-show / cancellation:</b> advance amount will not be refunded back.</div>
               <div><b>Early check-in / late checkout:</b> subject to availability & chargeable.</div>
               <div class="danger">Please confirm availability on WhatsApp/Call before making any payment.</div>
             </div>
@@ -205,9 +208,14 @@
       </div>
     </section>
 
+    <section class="section" id="room-view">
+      <h2>Room View</h2>
+      <p class="sub">Our guest house offers comfortable rooms with a pleasant city-facing view from selected rooms. Guests can enjoy natural light, open surroundings, and a peaceful stay experience. The room view adds to the comfort of the stay and gives a nice feel of the Park Street area atmosphere.</p>
+    </section>
+
     <section class="section" id="gallery">
       <h2>Terrace Gallery</h2>
-      <p class="sub">Actual photos of terrace area.</p>
+      <p class="sub">Our terrace offers an open view of the surrounding area and city atmosphere. Guests can enjoy fresh air, natural light, and a pleasant upper-floor view from the terrace. It adds an open-space feel to the stay experience and gives a clear idea of the surrounding neighbourhood and skyline.</p>
 
       <div class="cards">
         <article class="card"><div class="img"><img src="images/terrace1x.jpg" alt="Terrace 1"></div></article>
@@ -241,17 +249,20 @@
         <div class="card"><div class="body">
           <h3 style="margin:0 0 10px">UPI</h3>
           <p style="margin:0 0 10px"><b>UPI ID:</b> abusaleh401681@oksbi</p>
-          <p class="muted" style="margin:0 0 12px">After payment, send screenshot on WhatsApp for confirmation.</p>
+          <p class="muted" style="margin:0 0 12px">To book a room, minimum 40% advance is required. After payment, send screenshot on WhatsApp for confirmation.</p>
           <div class="ph" style="min-height:240px"><img src="images/upi-qr.jpg.jpeg" alt="UPI QR Code"></div>
           <p class="note">Upload your QR image as <b>images/upi-qr.jpg.jpeg</b>.</p>
         </div></div>
+
         <div class="card"><div class="body">
-          <h3 style="margin:0 0 10px">Refund & Charges</h3>
+          <h3 style="margin:0 0 10px">Advance, Refund & Charges</h3>
           <ul>
-            <li><b>Refundable:</b> cancel 24 hours before check-in</li>
-            <li><b>Non-refundable:</b> within 24 hours / same day</li>
-            <li><b>Extra guest:</b> ₹500 per guest per night (mattress)</li>
-            <li><b>Early check-in / late checkout:</b> subject to availability & chargeable</li>
+            <li><b>Minimum advance required:</b> 40% advance is required to book a room.</li>
+            <li><b>Advance adjustment:</b> once paid, the advance amount will be adjusted in the final room rent.</li>
+            <li><b>Advance refund policy:</b> once paid, the advance cannot be refunded back.</li>
+            <li><b>No-show / cancellation:</b> in case of no show or cancellation, the advance amount will not be refunded back.</li>
+            <li><b>Extra guest:</b> ₹500 per guest per night (mattress).</li>
+            <li><b>Early check-in / late checkout:</b> subject to availability & chargeable.</li>
             <li><b>No GST</b></li>
           </ul>
         </div></div>
@@ -264,13 +275,18 @@
         <div class="card"><div class="body">
           <h3 style="margin:0 0 10px">ID & House Rules</h3>
           <ul>
-            <li><b>ID mandatory:</b> Government-issued ID required for all guests.</li>
+            <li><b>Unmarried couples:</b> allowed.</li>
+            <li><b>Government ID:</b> required for all guests at check-in.</li>
+            <li><b>Local ID:</b> allowed.</li>
+            <li><b>Foreigners:</b> allowed.</li>
+            <li><b>Visitors in room:</b> allowed, but visitors must have a valid government-issued ID and it must be shown at the time of visitor check-in.</li>
+            <li><b>Outside food & beverages:</b> allowed.</li>
             <li><b>Smoking:</b> allowed in rooms & terrace; not allowed in reception.</li>
             <li><b>Alcohol:</b> allowed.</li>
-            <li><b>Visitors:</b> allowed.</li>
             <li><b>Staff:</b> 24×7 assistance available.</li>
           </ul>
         </div></div>
+
         <div class="card"><div class="body">
           <h3 style="margin:0 0 10px">Location</h3>
           <p class="muted" style="margin:0 0 12px"><b>10/1/1, Collin Lane, Park Street Area, Kolkata – 700016</b></p>
@@ -319,6 +335,9 @@
       const room = document.getElementById("roomOption").value || "Room";
       const notes = (document.getElementById("notes").value || "").trim();
       let msg = `Hello Saba Guest House, I want to book: ${room}. Check-in: ${ci}, Check-out: ${co}, Guests: ${g}.`;
+      msg += ` Minimum 40% advance is required to book a room.`;
+      msg += ` Advance once paid cannot be refunded and will be adjusted in the room rent.`;
+      msg += ` In case of no-show or cancellation, advance amount will not be refunded back.`;
       msg += ` Max guests per room is 2. Extra guest charge ₹500 per night (mattress).`;
       msg += ` Early check-in/late checkout subject to availability & chargeable.`;
       msg += ` Please confirm availability before payment.`;
