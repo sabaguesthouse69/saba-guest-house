@@ -1,144 +1,366 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Saba Guest House | Park Street Area, Kolkata</title>
-
-<style>
-body{margin:0;font-family:Arial;background:#f7f8fb}
-.wrap{max-width:1100px;margin:auto;padding:15px}
-h2{margin:25px 0 10px}
-.sub{color:#555;margin-bottom:15px}
-.cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px}
-.card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-.img img{width:100%;height:220px;object-fit:cover}
-.body{padding:10px}
-ul{line-height:1.7}
-.btn{
-display:inline-block;
-background:#16a34a;
-color:#fff;
-padding:12px 18px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-}
-@media(max-width:800px){.cards{grid-template-columns:1fr}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saba Guest House | Park Street Area, Kolkata</title>
+  <meta name="description" content="Book direct via WhatsApp. AC ₹1100, Non-AC ₹800. Small Single ₹600. Small Compact Double ₹700. Clean & hygienic stay near Park Street, Kolkata." />
+  <style>
+    :root{--bg:#0b1220;--card:#fff;--muted:#6b7280;--text:#111827;--soft:#f3f4f6;--brand:#0a58ff;--accent:#16a34a;--danger:#dc2626;--shadow:0 12px 34px rgba(0,0,0,.10);--radius:16px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:#f7f8fb}
+    a{color:inherit}
+    .wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+    .top{background:linear-gradient(135deg,#0b1220 0%,#111d3a 50%,#0b1220 100%);color:#fff;padding:18px 0 24px}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .logo b{font-size:22px;letter-spacing:.2px}
+    .logo span{display:block;font-size:13px;opacity:.85;margin-top:4px}
+    .chips{display:flex;gap:10px;flex-wrap:wrap}
+    .chip{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.10);padding:8px 10px;border-radius:999px;font-size:13px}
+    .hero{margin-top:18px;display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:stretch}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    .heroCard{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);border-radius:var(--radius);padding:18px}
+    .heroCard h1{margin:0 0 8px;font-size:30px}
+    .heroCard p{margin:0;color:rgba(255,255,255,.86);line-height:1.55}
+    .badges{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+    .badge{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.10);padding:7px 10px;border-radius:999px;font-size:13px}
+    .search{background:#fff;border-radius:var(--radius);padding:14px;box-shadow:var(--shadow)}
+    .grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+    @media (max-width:520px){.grid{grid-template-columns:1fr}}
+    label{display:block;font-size:12px;color:var(--muted);margin:0 0 6px}
+    input,select{width:100%;padding:11px 12px;border-radius:12px;border:1px solid #e5e7eb;background:#fff;font-size:14px;outline:none}
+    input:focus,select:focus{border-color:#c7d2fe;box-shadow:0 0 0 4px rgba(10,88,255,.10)}
+    .btnRow{margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media (max-width:520px){.btnRow{grid-template-columns:1fr}}
+    .btn{border:none;border-radius:12px;padding:12px 14px;font-weight:800;cursor:pointer;width:100%;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none}
+    .primary{background:var(--brand);color:#fff}
+    .whats{background:var(--accent);color:#fff}
+    .note{margin-top:10px;font-size:12px;color:var(--muted);line-height:1.55}
+    .note .danger{color:var(--danger);font-weight:800}
+    .section{padding:26px 0}
+    h2{margin:0 0 12px}
+    .sub{margin:0 0 14px;color:var(--muted);line-height:1.6}
+    .cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+    @media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+    @media (max-width:600px){.cards{grid-template-columns:1fr}}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #eef0f5;overflow:hidden}
+    .img{height:220px;background:#e5e7eb;border-bottom:1px solid #eef0f5}
+    .img img{width:100%;height:100%;object-fit:cover;display:block}
+    .body{padding:14px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+    .tag{background:var(--soft);padding:7px 10px;border-radius:999px;font-size:13px}
+    .muted{color:var(--muted)}
+    .miniBtn{margin-top:12px}
+    .gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
+    .ph{background:#e5e7eb;border-radius:12px;overflow:hidden;border:1px solid #e5e7eb;min-height:170px}
+    .ph img{width:100%;height:100%;object-fit:cover;display:block}
+    .big{grid-column:span 7;min-height:320px}
+    .small{grid-column:span 5}
+    @media (max-width:900px){.big,.small{grid-column:span 12}}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width:900px){.two{grid-template-columns:1fr}}
+    ul{margin:10px 0 0;padding:0 0 0 18px;line-height:1.65}
+    .footer{background:#0b1220;color:#cbd5e1;padding:22px 0;margin-top:10px}
+    .footer a{color:#fff;text-decoration:underline}
+    .float{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;text-decoration:none;padding:12px 14px;border-radius:999px;font-weight:900;box-shadow:0 14px 34px rgba(22,163,74,.25);border:1px solid rgba(255,255,255,.22)}
+  </style>
 </head>
-
 <body>
+  <header class="top">
+    <div class="wrap">
+      <div class="nav">
+        <div class="logo">
+          <b>Saba Guest House</b>
+          <span>10/1/1, Collin Lane • Park Street Area • Kolkata – 700016</span>
+        </div>
+        <div class="chips">
+          <span class="chip">WhatsApp/Call: +91 6289271990</span>
+          <span class="chip">Email: sabaguesthouse69@gmail.com</span>
+        </div>
+      </div>
 
-<div class="wrap">
+      <div class="hero">
+        <div class="heroCard">
+          <h1>Book Direct in 30 seconds</h1>
+          <p>Clean & hygienic stay in a prime location near Park Street. Pick dates, choose room option, and send booking request on WhatsApp.</p>
+          <div class="badges">
+            <span class="badge">24×7 Staff Assistance</span>
+            <span class="badge">Lift / Elevator</span>
+            <span class="badge">CCTV Security</span>
+            <span class="badge">UPI + Cash Accepted</span>
+          </div>
+        </div>
 
-<!-- HEADER -->
-<h1>Saba Guest House</h1>
-<p>Park Street Area, Kolkata</p>
+        <div class="search">
+          <form onsubmit="return false;">
+            <div class="grid">
+              <div><label>Check-in</label><input id="checkin" type="date" required></div>
+              <div><label>Check-out</label><input id="checkout" type="date" required></div>
+              <div><label>Guests</label>
+                <select id="guests" required>
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                </select>
+              </div>
+              <div><label>Room Option</label>
+                <select id="roomOption" required>
+                  <option value="AC Room (₹1100/night)">AC Room (₹1100/night)</option>
+                  <option value="Non-AC Room (₹800/night)">Non-AC Room (₹800/night)</option>
+                  <option value="Small Single Bed Room (₹600/night)">Small Single Bed Room (₹600/night)</option>
+                  <option value="Small Compact Double Room (₹700/night)">Small Compact Double Room (₹700/night)</option>
+                </select>
+              </div>
+            </div>
 
-<a class="btn" href="https://wa.me/916289271990" target="_blank">
-Book on WhatsApp
-</a>
+            <div style="margin-top:10px">
+              <label>Notes (optional)</label>
+              <input id="notes" type="text" placeholder="Example: late arrival, floor preference, extra mattress...">
+            </div>
 
-<!-- ROOMS -->
-<section>
-<h2>Rooms</h2>
-<div class="cards">
+            <div class="btnRow">
+              <button class="btn primary" type="button" onclick="previewMsg()">Preview</button>
+              <button class="btn whats" type="button" onclick="sendWA()">Book on WhatsApp</button>
+            </div>
 
-<div class="card">
-<div class="img"><img src="images/hero.jpg.jpeg"></div>
-<div class="body"><b>AC Room ₹1100</b></div>
-</div>
+            <div class="note">
+              <div><b>Check-in:</b> 12:00 PM • <b>Check-out:</b> 11:00 AM</div>
+              <div><b>Max guests:</b> 2 per room. <b>Extra guest:</b> ₹500 per guest per night (mattress).</div>
+              <div><b>Minimum advance:</b> 40% advance is required to book a room.</div>
+              <div><b>Advance policy:</b> once paid, advance cannot be refunded back and will be adjusted in the room rent.</div>
+              <div><b>No-show / cancellation:</b> advance amount will not be refunded back.</div>
+              <div><b>Early check-in / late checkout:</b> subject to availability & chargeable.</div>
+              <div class="danger">Please confirm availability on WhatsApp/Call before making any payment.</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<div class="card">
-<div class="img"><img src="images/room-1.jpg.jpeg"></div>
-<div class="body"><b>Non-AC Room ₹800</b></div>
-</div>
+  <main class="wrap">
+    <section class="section" id="rooms">
+      <h2>Rooms & Pricing</h2>
+      <p class="sub">Room availability is confirmed manually via WhatsApp to avoid overbooking. Limited availability — book early.</p>
 
-<div class="card">
-<div class="img"><img src="images/room-2.jpg.jpeg"></div>
-<div class="body"><b>Small Room ₹600 / ₹700</b></div>
-</div>
+      <div class="cards">
+        <article class="card">
+          <div class="img"><img src="images/hero.jpg.jpeg" alt="AC room"></div>
+          <div class="body">
+            <h3>AC Room</h3>
+            <div class="tags">
+              <span class="tag"><b>₹1100</b>/night</span>
+              <span class="tag">Double Bed</span>
+              <span class="tag">Max 2 guests</span>
+            </div>
+            <p class="muted" style="margin:0">AC is provided as per booking option. Govt-issued ID mandatory at check-in.</p>
+            <div class="miniBtn">
+              <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20an%20AC%20Room.%20Please%20confirm%20availability." target="_blank" rel="noopener">Book AC on WhatsApp</a>
+            </div>
+          </div>
+        </article>
 
-</div>
-</section>
+        <article class="card">
+          <div class="img"><img src="images/room-1.jpg.jpeg" alt="Non-AC room"></div>
+          <div class="body">
+            <h3>Non-AC Room</h3>
+            <div class="tags">
+              <span class="tag"><b>₹800</b>/night</span>
+              <span class="tag">Double Bed</span>
+              <span class="tag">Max 2 guests</span>
+            </div>
+            <p class="muted" style="margin:0">Budget-friendly option. Visitors allowed. Alcohol allowed.</p>
+            <div class="miniBtn">
+              <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20a%20Non-AC%20Room.%20Please%20confirm%20availability." target="_blank" rel="noopener">Book Non-AC on WhatsApp</a>
+            </div>
+          </div>
+        </article>
 
-<!-- ROOM VIEW -->
-<section>
-<h2>Room View</h2>
-<p class="sub">
-Our guest house rooms offer a comfortable stay with a pleasant surrounding view. Guests can enjoy natural light, peaceful environment, and a relaxed stay experience near Park Street area.
-</p>
-</section>
+        <article class="card">
+          <div class="img"><img src="images/room-2.jpg.jpeg" alt="Small room options"></div>
+          <div class="body">
+            <h3>Small Room Options</h3>
 
-<!-- TERRACE -->
-<section>
-<h2>Terrace Gallery</h2>
-<p class="sub">
-Our terrace provides an open and relaxing environment with fresh air and surrounding city view. Guests can enjoy peaceful moments and a comfortable upper-floor experience.
-</p>
+            <div class="tags">
+              <span class="tag"><b>₹600</b>/night</span>
+              <span class="tag">Single Bed</span>
+              <span class="tag">1 Guest</span>
+            </div>
 
-<div class="cards">
-<div class="card"><div class="img"><img src="images/terrace1x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace2x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace3x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace4x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace5x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace6x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace7x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace8x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace9x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace10x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace11x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace12x.jpg"></div></div>
-<div class="card"><div class="img"><img src="images/terrace13x.jpg"></div></div>
-</div>
-</section>
+            <div class="tags">
+              <span class="tag"><b>₹700</b>/night</span>
+              <span class="tag">Compact Double Bed</span>
+              <span class="tag">Max 2 guests</span>
+            </div>
 
-<!-- FOODING -->
-<section>
-<h2>Fooding</h2>
-<p class="sub">
-Fooding is available from nearby restaurants. Guests can dine in nearby restaurants or bring parcel food inside the property. Guests can also ask the staff on duty for any kind of assistance related to food or service.
-</p>
+            <p class="muted" style="margin:0">Compact, clean & comfortable rooms. Ideal for solo travellers or short stays.</p>
 
-<div class="cards">
-<div class="card">
-<div class="img">
-<img src="images/bf1x.jpeg">
-</div>
-<div class="body">
-<b>Nearby Food & Dining Available</b>
-</div>
-</div>
-</div>
-</section>
+            <div class="miniBtn">
+              <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20a%20Small%20Room.%20Please%20confirm%20whether%20Single%20Bed%20(₹600)%20or%20Compact%20Double%20(₹700)%20is%20available." target="_blank" rel="noopener">
+                Book Small Room on WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<!-- PAYMENT -->
-<section>
-<h2>Payment & Policy</h2>
-<ul>
-<li>Minimum 40% advance required for booking</li>
-<li>Advance once paid will be adjusted in room rent</li>
-<li>Advance is non-refundable</li>
-<li>No-show or cancellation → no refund</li>
-</ul>
-</section>
+    <section class="section" id="room-view">
+      <h2>Room View</h2>
+      <p class="sub">Our guest house offers comfortable rooms with a pleasant city-facing view from selected rooms. Guests can enjoy natural light, open surroundings, and a peaceful stay experience. The room view adds to the comfort of the stay and gives a nice feel of the Park Street area atmosphere.</p>
+    </section>
 
-<!-- RULES -->
-<section>
-<h2>Rules</h2>
-<ul>
-<li>Unmarried couples allowed</li>
-<li>Government ID required</li>
-<li>Local ID allowed</li>
-<li>Foreigners allowed</li>
-<li>Visitors allowed with valid ID</li>
-<li>Outside food allowed</li>
-</ul>
-</section>
+    <section class="section" id="gallery">
+      <h2>Terrace Gallery</h2>
+      <p class="sub">Our terrace offers an open view of the surrounding area and city atmosphere. Guests can enjoy fresh air, natural light, and a pleasant upper-floor view from the terrace. It adds an open-space feel to the stay experience and gives a clear idea of the surrounding neighbourhood and skyline.</p>
 
-</div>
+      <div class="cards">
+        <article class="card"><div class="img"><img src="images/terrace1x.jpg" alt="Terrace 1"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace2x.jpg" alt="Terrace 2"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace3x.jpg" alt="Terrace 3"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace4x.jpg" alt="Terrace 4"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace5x.jpg" alt="Terrace 5"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace6x.jpg" alt="Terrace 6"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace7x.jpg" alt="Terrace 7"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace8x.jpg" alt="Terrace 8"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace9x.jpg" alt="Terrace 9"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace10x.jpg" alt="Terrace 10"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace11x.jpg" alt="Terrace 11"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace12x.jpg" alt="Terrace 12"></div></article>
+        <article class="card"><div class="img"><img src="images/terrace13x.jpg" alt="Terrace 13"></div></article>
+      </div>
+    </section>
 
+    <section class="section" id="reviews">
+      <h2>Google Reviews</h2>
+      <p class="sub">Real reviews from our guests on Google.</p>
+
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-e4fe9f8b-1e96-4737-a1e1-5aaa19c7d0cf" data-elfsight-app-lazy></div>
+    </section>
+
+    <section class="section" id="fooding">
+      <h2>Fooding</h2>
+      <p class="sub">Fooding is available from nearby restaurants. Guests can dine in nearby restaurants or bring parcel food inside the property. Guests can also ask the staff on duty for any kind of service or assistance related to food.</p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="img"><img src="images/bf1x.jpeg" alt="Fooding"></div>
+          <div class="body">
+            <h3>Nearby Food & Dining</h3>
+            <p class="muted" style="margin:0">Enjoy food from nearby restaurants, dine outside, or bring parcel food inside the property for a comfortable stay experience.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="payment">
+      <h2>Payment</h2>
+      <p class="sub"><b>UPI + Cash accepted.</b> Please confirm availability on WhatsApp/Call before making any payment.</p>
+      <div class="two">
+        <div class="card"><div class="body">
+          <h3 style="margin:0 0 10px">UPI</h3>
+          <p style="margin:0 0 10px"><b>UPI ID:</b> abusaleh401681@oksbi</p>
+          <p class="muted" style="margin:0 0 12px">To book a room, minimum 40% advance is required. After payment, send screenshot on WhatsApp for confirmation.</p>
+          <div class="ph" style="min-height:240px"><img src="images/upi-qr.jpg.jpeg" alt="UPI QR Code"></div>
+          <p class="note">Upload your QR image as <b>images/upi-qr.jpg.jpeg</b>.</p>
+        </div></div>
+
+        <div class="card"><div class="body">
+          <h3 style="margin:0 0 10px">Advance, Refund & Charges</h3>
+          <ul>
+            <li><b>Minimum advance required:</b> 40% advance is required to book a room.</li>
+            <li><b>Advance adjustment:</b> once paid, the advance amount will be adjusted in the final room rent.</li>
+            <li><b>Advance refund policy:</b> once paid, the advance cannot be refunded back.</li>
+            <li><b>No-show / cancellation:</b> in case of no show or cancellation, the advance amount will not be refunded back.</li>
+            <li><b>Extra guest:</b> ₹500 per guest per night (mattress).</li>
+            <li><b>Early check-in / late checkout:</b> subject to availability & chargeable.</li>
+            <li><b>No GST</b></li>
+          </ul>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="section" id="policies">
+      <h2>Rules & Check-in</h2>
+      <div class="two">
+        <div class="card"><div class="body">
+          <h3 style="margin:0 0 10px">ID & House Rules</h3>
+          <ul>
+            <li><b>Unmarried couples:</b> allowed.</li>
+            <li><b>Government ID:</b> required for all guests at check-in.</li>
+            <li><b>Local ID:</b> allowed.</li>
+            <li><b>Foreigners:</b> allowed.</li>
+            <li><b>Visitors in room:</b> allowed, but visitors must have a valid government-issued ID and it must be shown at the time of visitor check-in.</li>
+            <li><b>Outside food & beverages:</b> allowed.</li>
+            <li><b>Smoking:</b> allowed in rooms & terrace; not allowed in reception.</li>
+            <li><b>Alcohol:</b> allowed.</li>
+            <li><b>Staff:</b> 24×7 assistance available.</li>
+          </ul>
+        </div></div>
+
+        <div class="card"><div class="body">
+          <h3 style="margin:0 0 10px">Location</h3>
+          <p class="muted" style="margin:0 0 12px"><b>10/1/1, Collin Lane, Park Street Area, Kolkata – 700016</b></p>
+          <iframe title="Map" src="https://www.google.com/maps?q=Saba%20Guest%20House%20Kolkata&output=embed"
+                  width="100%" height="260" style="border:0;border-radius:12px" loading="lazy"></iframe>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p class="sub">For fastest confirmation, message on WhatsApp.</p>
+      <div class="two">
+        <div class="card"><div class="body">
+          <h3 style="margin:0 0 8px">WhatsApp / Call</h3>
+          <p style="margin:0 0 12px"><b>+91 6289271990</b></p>
+          <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20a%20room.%20Please%20confirm%20availability." target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div></div>
+        <div class="card"><div class="body">
+          <h3 style="margin:0 0 8px">Email</h3>
+          <p style="margin:0 0 12px"><b>sabaguesthouse69@gmail.com</b></p>
+          <a class="btn primary" href="mailto:sabaguesthouse69@gmail.com">Send Email</a>
+        </div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+      <div>
+        <div style="font-weight:900;color:#fff">Saba Guest House</div>
+        <div style="margin-top:6px">WhatsApp/Call: <a href="https://wa.me/916289271990" target="_blank" rel="noopener">+91 6289271990</a> • Email: <a href="mailto:sabaguesthouse69@gmail.com">sabaguesthouse69@gmail.com</a></div>
+      </div>
+      <div style="opacity:.9">© 2026 Saba Guest House</div>
+    </div>
+  </footer>
+
+  <a class="float" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20a%20room.%20Please%20confirm%20availability." target="_blank" rel="noopener">WhatsApp Booking</a>
+
+  <script>
+    const WA_BASE = "https://wa.me/916289271990?text=";
+    function buildMsg(){
+      const ci = document.getElementById("checkin").value || "(not selected)";
+      const co = document.getElementById("checkout").value || "(not selected)";
+      const g  = document.getElementById("guests").value || "2";
+      const room = document.getElementById("roomOption").value || "Room";
+      const notes = (document.getElementById("notes").value || "").trim();
+      let msg = `Hello Saba Guest House, I want to book: ${room}. Check-in: ${ci}, Check-out: ${co}, Guests: ${g}.`;
+      msg += ` Minimum 40% advance is required to book a room.`;
+      msg += ` Advance once paid cannot be refunded and will be adjusted in the room rent.`;
+      msg += ` In case of no-show or cancellation, advance amount will not be refunded back.`;
+      msg += ` Max guests per room is 2. Extra guest charge ₹500 per night (mattress).`;
+      msg += ` Early check-in/late checkout subject to availability & chargeable.`;
+      msg += ` Please confirm availability before payment.`;
+      if(notes) msg += ` Notes: ${notes}`;
+      return msg;
+    }
+    function previewMsg(){ alert(buildMsg()); }
+    function sendWA(){ window.open(WA_BASE + encodeURIComponent(buildMsg()), "_blank", "noopener"); }
+  </script>
 </body>
 </html>
