@@ -2,65 +2,317 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saba Guest House | Park Street Area, Kolkata</title>
-  <meta name="description" content="Book direct via WhatsApp. AC ₹1100, Non-AC ₹800. Small Single ₹600, Small Compact Double ₹700. Clean & hygienic stay near Park Street, Kolkata." />
+  <meta name="description" content="Book direct via WhatsApp. AC ₹1100, Non-AC ₹800. Small Single ₹600, Small Compact Double ₹700. Clean and hygienic stay near Park Street, Kolkata." />
   <style>
-    :root{--bg:#0b1220;--card:#fff;--muted:#6b7280;--text:#111827;--soft:#f3f4f6;--brand:#0a58ff;--accent:#16a34a;--danger:#dc2626;--shadow:0 12px 34px rgba(0,0,0,.10);--radius:16px}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:#f7f8fb}
-    a{color:inherit}
-    .wrap{max-width:1120px;margin:0 auto;padding:0 16px}
-    .top{background:linear-gradient(135deg,#0b1220 0%,#111d3a 50%,#0b1220 100%);color:#fff;padding:18px 0 24px}
-    .nav{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    .logo b{font-size:22px;letter-spacing:.2px}
-    .logo span{display:block;font-size:13px;opacity:.85;margin-top:4px}
-    .chips{display:flex;gap:10px;flex-wrap:wrap}
-    .chip{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.10);padding:8px 10px;border-radius:999px;font-size:13px}
-    .hero{margin-top:18px;display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:stretch}
-    @media (max-width:900px){.hero{grid-template-columns:1fr}}
-    .heroCard{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);border-radius:var(--radius);padding:18px}
-    .heroCard h1{margin:0 0 8px;font-size:30px}
-    .heroCard p{margin:0;color:rgba(255,255,255,.86);line-height:1.55}
-    .badges{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
-    .badge{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.10);padding:7px 10px;border-radius:999px;font-size:13px}
-    .search{background:#fff;border-radius:var(--radius);padding:14px;box-shadow:var(--shadow)}
-    .grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:10px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
-    @media (max-width:520px){.grid{grid-template-columns:1fr}}
-    label{display:block;font-size:12px;color:var(--muted);margin:0 0 6px}
-    input,select{width:100%;padding:11px 12px;border-radius:12px;border:1px solid #e5e7eb;background:#fff;font-size:14px;outline:none}
-    input:focus,select:focus{border-color:#c7d2fe;box-shadow:0 0 0 4px rgba(10,88,255,.10)}
-    .btnRow{margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    @media (max-width:520px){.btnRow{grid-template-columns:1fr}}
-    .btn{border:none;border-radius:12px;padding:12px 14px;font-weight:800;cursor:pointer;width:100%;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none}
-    .primary{background:var(--brand);color:#fff}
-    .whats{background:var(--accent);color:#fff}
-    .note{margin-top:10px;font-size:12px;color:var(--muted);line-height:1.55}
-    .note .danger{color:var(--danger);font-weight:800}
-    .section{padding:26px 0}
-    h2{margin:0 0 12px}
-    .sub{margin:0 0 14px;color:var(--muted);line-height:1.6}
-    .cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
-    @media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
-    @media (max-width:600px){.cards{grid-template-columns:1fr}}
-    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #eef0f5;overflow:hidden}
-    .img{height:220px;background:#e5e7eb;border-bottom:1px solid #eef0f5}
-    .img img{width:100%;height:100%;object-fit:cover;display:block}
-    .body{padding:14px}
-    .card h3{margin:0 0 6px;font-size:18px}
-    .tags{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
-    .tag{background:var(--soft);padding:7px 10px;border-radius:999px;font-size:13px}
-    .muted{color:var(--muted)}
-    .miniBtn{margin-top:12px}
-    .ph{background:#e5e7eb;border-radius:12px;overflow:hidden;border:1px solid #e5e7eb;min-height:170px}
-    .ph img{width:100%;height:100%;object-fit:cover;display:block}
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    @media (max-width:900px){.two{grid-template-columns:1fr}}
-    ul{margin:10px 0 0;padding:0 0 0 18px;line-height:1.65}
-    .footer{background:#0b1220;color:#cbd5e1;padding:22px 0;margin-top:10px}
-    .footer a{color:#fff;text-decoration:underline}
-    .float{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;text-decoration:none;padding:12px 14px;border-radius:999px;font-weight:900;box-shadow:0 14px 34px rgba(22,163,74,.25);border:1px solid rgba(255,255,255,.22)}
+    :root {
+      --bg: #0b1220;
+      --bg2: #111d3a;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --text: #111827;
+      --soft: #f3f4f6;
+      --brand: #0a58ff;
+      --accent: #16a34a;
+      --danger: #dc2626;
+      --border: #e5e7eb;
+      --shadow: 0 12px 34px rgba(0,0,0,.10);
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: #f7f8fb;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+    .top {
+      background: linear-gradient(135deg, var(--bg) 0%, var(--bg2) 50%, var(--bg) 100%);
+      color: #fff;
+      padding: 18px 0 28px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .logo b {
+      font-size: 24px;
+      letter-spacing: .2px;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 13px;
+      opacity: .85;
+      margin-top: 4px;
+    }
+
+    .chips, .badges, .tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .chip, .badge {
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.10);
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+
+    .hero {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+
+    .heroCard {
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+
+    .heroCard h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      line-height: 1.15;
+    }
+
+    .heroCard p {
+      margin: 0;
+      color: rgba(255,255,255,.88);
+      line-height: 1.6;
+    }
+
+    .search {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 520px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0 0 6px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 11px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #fff;
+      font-size: 14px;
+      outline: none;
+      font-family: inherit;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #c7d2fe;
+      box-shadow: 0 0 0 4px rgba(10,88,255,.10);
+    }
+
+    .btnRow {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    @media (max-width: 520px) {
+      .btnRow { grid-template-columns: 1fr; }
+    }
+
+    .btn {
+      border: none;
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-weight: 800;
+      cursor: pointer;
+      width: 100%;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .primary { background: var(--brand); color: #fff; }
+    .whats { background: var(--accent); color: #fff; }
+
+    .note {
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .note .danger, .danger {
+      color: var(--danger);
+      font-weight: 800;
+    }
+
+    .section { padding: 28px 0; }
+    h2 { margin: 0 0 12px; font-size: 28px; }
+
+    .sub {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .cards { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      .cards { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid #eef0f5;
+      overflow: hidden;
+    }
+
+    .img {
+      height: 220px;
+      background: #e5e7eb;
+      border-bottom: 1px solid #eef0f5;
+    }
+
+    .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bodyBox { padding: 14px; }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+
+    .tag {
+      background: var(--soft);
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+
+    .muted { color: var(--muted); }
+    .miniBtn { margin-top: 12px; }
+
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .two { grid-template-columns: 1fr; }
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      line-height: 1.7;
+    }
+
+    .footer {
+      background: var(--bg);
+      color: #cbd5e1;
+      padding: 22px 0;
+      margin-top: 10px;
+    }
+
+    .footer a { color: #fff; text-decoration: underline; }
+
+    .float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 14px;
+      border-radius: 999px;
+      font-weight: 900;
+      box-shadow: 0 14px 34px rgba(22,163,74,.25);
+      border: 1px solid rgba(255,255,255,.22);
+      z-index: 20;
+    }
+
+    .quickLinks {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .quickLinks a {
+      font-size: 13px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.15);
+    }
+
+    .sectionHead {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .smallText { font-size: 13px; color: var(--muted); }
+    .center { text-align: center; }
   </style>
 </head>
 <body>
@@ -72,29 +324,45 @@
           <span>10/1/1, Collin Lane • Park Street Area • Kolkata – 700016</span>
         </div>
         <div class="chips">
-          <span class="chip">WhatsApp/Call: +91 6289271990</span>
+          <span class="chip">WhatsApp / Call: +91 6289271990</span>
           <span class="chip">Email: sabaguesthouse69@gmail.com</span>
         </div>
       </div>
 
       <div class="hero">
         <div class="heroCard">
-          <h1>Book Direct in 30 seconds</h1>
-          <p>Clean & hygienic stay in a prime location near Park Street. Pick dates, choose room option, and send booking request on WhatsApp.</p>
-          <div class="badges">
+          <h1>Book Direct in 30 Seconds</h1>
+          <p>Clean and hygienic stay in a prime location near Park Street, Kolkata. Select your dates, choose your room option, and send your booking request directly on WhatsApp.</p>
+
+          <div class="badges" style="margin-top:14px;">
             <span class="badge">24×7 Staff Assistance</span>
             <span class="badge">Lift / Elevator</span>
             <span class="badge">CCTV Security</span>
             <span class="badge">UPI + Cash Accepted</span>
+          </div>
+
+          <div class="quickLinks">
+            <a href="#rooms">Rooms</a>
+            <a href="#gallery">Terrace</a>
+            <a href="#payment">Payment</a>
+            <a href="#policies">Rules</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
 
         <div class="search">
           <form onsubmit="return false;">
             <div class="grid">
-              <div><label>Check-in</label><input id="checkin" type="date" required></div>
-              <div><label>Check-out</label><input id="checkout" type="date" required></div>
-              <div><label>Guests</label>
+              <div>
+                <label for="checkin">Check-in</label>
+                <input id="checkin" type="date" required>
+              </div>
+              <div>
+                <label for="checkout">Check-out</label>
+                <input id="checkout" type="date" required>
+              </div>
+              <div>
+                <label for="guests">Guests</label>
                 <select id="guests" required>
                   <option value="1">1 Guest</option>
                   <option value="2" selected>2 Guests</option>
@@ -102,7 +370,8 @@
                   <option value="4">4 Guests</option>
                 </select>
               </div>
-              <div><label>Room Option</label>
+              <div>
+                <label for="roomOption">Room Option</label>
                 <select id="roomOption" required>
                   <option value="AC Room (₹1100/night)">AC Room (₹1100/night)</option>
                   <option value="Non-AC Room (₹800/night)">Non-AC Room (₹800/night)</option>
@@ -113,7 +382,7 @@
             </div>
 
             <div style="margin-top:10px">
-              <label>Notes (optional)</label>
+              <label for="notes">Notes (optional)</label>
               <input id="notes" type="text" placeholder="Example: late arrival, floor preference, extra mattress...">
             </div>
 
@@ -124,12 +393,13 @@
 
             <div class="note">
               <div><b>Check-in:</b> 12:00 PM • <b>Check-out:</b> 11:00 AM</div>
-              <div><b>Max guests:</b> 2 per room. <b>Extra guest:</b> ₹500 per guest per night (mattress).</div>
-              <div><b>Minimum advance:</b> 40% advance is required to book a room.</div>
-              <div><b>Advance policy:</b> once paid, advance cannot be refunded back and will be adjusted in the room rent.</div>
-              <div><b>No-show / cancellation:</b> advance amount will not be refunded back.</div>
-              <div><b>Early check-in / late checkout:</b> subject to availability & chargeable.</div>
-              <div class="danger">Please confirm availability on WhatsApp/Call before making any payment.</div>
+              <div><b>Max guests:</b> 2 per room</div>
+              <div><b>Extra guest:</b> ₹500 per guest per night (mattress)</div>
+              <div><b>Minimum advance:</b> 40% advance is required to book a room</div>
+              <div><b>Advance policy:</b> once paid, the advance cannot be refunded back and will be adjusted in the room rent</div>
+              <div><b>No-show / cancellation:</b> advance amount will not be refunded back</div>
+              <div><b>Early check-in / late check-out:</b> subject to availability and chargeable</div>
+              <div class="danger">Please confirm availability on WhatsApp / Call before making any payment.</div>
             </div>
           </form>
         </div>
@@ -139,20 +409,24 @@
 
   <main class="wrap">
     <section class="section" id="rooms">
-      <h2>Rooms & Pricing</h2>
-      <p class="sub">Room availability is confirmed manually via WhatsApp to avoid overbooking. Limited availability — book early.</p>
+      <div class="sectionHead">
+        <div>
+          <h2>Rooms & Pricing</h2>
+          <p class="sub">Room availability is confirmed manually via WhatsApp to avoid overbooking. Limited availability, so early confirmation is recommended.</p>
+        </div>
+      </div>
 
       <div class="cards">
         <article class="card">
           <div class="img"><img src="images/hero.jpg.jpeg" alt="AC room" loading="lazy"></div>
-          <div class="body">
+          <div class="bodyBox">
             <h3>AC Room</h3>
             <div class="tags">
-              <span class="tag"><b>₹1100</b>/night</span>
+              <span class="tag"><b>₹1100</b> / night</span>
               <span class="tag">Double Bed</span>
-              <span class="tag">Max 2 guests</span>
+              <span class="tag">Max 2 Guests</span>
             </div>
-            <p class="muted" style="margin:0">AC is provided as per booking option. Govt-issued ID mandatory at check-in.</p>
+            <p class="muted" style="margin:0">Comfortable AC room for a relaxed stay. Government-issued ID is mandatory at check-in.</p>
             <div class="miniBtn">
               <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20an%20AC%20Room.%20Please%20confirm%20availability." target="_blank" rel="noopener">Book AC on WhatsApp</a>
             </div>
@@ -161,14 +435,14 @@
 
         <article class="card">
           <div class="img"><img src="images/room-1.jpg.jpeg" alt="Non-AC room" loading="lazy"></div>
-          <div class="body">
+          <div class="bodyBox">
             <h3>Non-AC Room</h3>
             <div class="tags">
-              <span class="tag"><b>₹800</b>/night</span>
+              <span class="tag"><b>₹800</b> / night</span>
               <span class="tag">Double Bed</span>
-              <span class="tag">Max 2 guests</span>
+              <span class="tag">Max 2 Guests</span>
             </div>
-            <p class="muted" style="margin:0">Budget-friendly option. Visitors allowed. Alcohol allowed.</p>
+            <p class="muted" style="margin:0">Budget-friendly option for a clean and comfortable stay. Visitors and alcohol are allowed as per house rules.</p>
             <div class="miniBtn">
               <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20a%20Non-AC%20Room.%20Please%20confirm%20availability." target="_blank" rel="noopener">Book Non-AC on WhatsApp</a>
             </div>
@@ -177,19 +451,19 @@
 
         <article class="card">
           <div class="img"><img src="images/room-2.jpg.jpeg" alt="Small room options" loading="lazy"></div>
-          <div class="body">
+          <div class="bodyBox">
             <h3>Small Room Options</h3>
             <div class="tags">
-              <span class="tag"><b>₹600</b>/night</span>
+              <span class="tag"><b>₹600</b> / night</span>
               <span class="tag">Single Bed</span>
               <span class="tag">1 Guest</span>
             </div>
-            <div class="tags">
-              <span class="tag"><b>₹700</b>/night</span>
+            <div class="tags" style="margin-top:8px;">
+              <span class="tag"><b>₹700</b> / night</span>
               <span class="tag">Compact Double Bed</span>
-              <span class="tag">Max 2 guests</span>
+              <span class="tag">Max 2 Guests</span>
             </div>
-            <p class="muted" style="margin:0">Compact, clean & comfortable rooms. Ideal for solo travellers or short stays.</p>
+            <p class="muted" style="margin:0">Compact, clean, and comfortable rooms, ideal for solo travellers, short stays, or budget bookings.</p>
             <div class="miniBtn">
               <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20a%20Small%20Room.%20Please%20confirm%20whether%20Single%20Bed%20(₹600)%20or%20Compact%20Double%20(₹700)%20is%20available." target="_blank" rel="noopener">Book Small Room on WhatsApp</a>
             </div>
@@ -200,12 +474,12 @@
 
     <section class="section" id="room-view">
       <h2>Room View</h2>
-      <p class="sub">Our guest house offers comfortable rooms with a pleasant city-facing view from selected rooms. Guests can enjoy natural light, open surroundings, and a peaceful stay experience. The room view adds to the comfort of the stay and gives a nice feel of the Park Street area atmosphere.</p>
+      <p class="sub">Selected rooms offer a pleasant city-facing view with natural light and a peaceful atmosphere. The surrounding Park Street area feel adds comfort to the overall stay experience.</p>
     </section>
 
     <section class="section" id="gallery">
       <h2>Terrace Gallery</h2>
-      <p class="sub">Our terrace offers an open view of the surrounding area and city atmosphere. Guests can enjoy fresh air, natural light, and a pleasant upper-floor view from the terrace. It adds an open-space feel to the stay experience and gives a clear idea of the surrounding neighbourhood and skyline.</p>
+      <p class="sub">Our terrace offers an open view of the surrounding area and city atmosphere. Guests can enjoy fresh air, natural light, and a pleasant upper-floor space during their stay.</p>
 
       <div class="cards">
         <article class="card"><div class="img"><img src="images/terrace1x.jpg" alt="Terrace 1" loading="lazy"></div></article>
@@ -226,18 +500,14 @@
 
     <section class="section" id="activities">
       <h2>Nearby Activities</h2>
-      <p class="sub">
-        Guests staying with us can also explore nearby outdoor spots and local attractions around the Park Street area. Open parks, walkable spaces, sightseeing points, and relaxing public places are available nearby for leisure time and short visits during your stay.
-      </p>
+      <p class="sub">Guests staying with us can explore nearby outdoor spots and local attractions around the Park Street area. Walkable areas, sightseeing points, and leisure spots are available nearby for short visits during your stay.</p>
 
       <div class="cards">
         <article class="card">
-          <div class="img"><img src="images/T1.jpg" alt="Nearby Activities" loading="lazy"></div>
-          <div class="body">
+          <div class="img"><img src="images/T1.jpg" alt="Nearby attractions" loading="lazy"></div>
+          <div class="bodyBox">
             <h3>Nearby Attractions & Outdoor Visits</h3>
-            <p class="muted" style="margin:0">
-              Guests can enjoy nearby sightseeing places, public parks, open walking areas, and family-friendly outdoor spots located around the city for relaxation and short local visits.
-            </p>
+            <p class="muted" style="margin:0">Guests can enjoy nearby sightseeing places, public parks, open walking areas, and family-friendly outdoor spots located around the city.</p>
           </div>
         </article>
       </div>
@@ -251,79 +521,55 @@
     </section>
 
     <section class="section" id="fooding">
-      <h2>Fooding</h2>
-      <p class="sub">
-        Fooding is available from nearby restaurants. Guests can dine in nearby restaurants or bring parcel food inside the property. Guests can also ask the staff on duty for any kind of service or assistance related to food. A variety of meal options such as full Indian thali, curry meals, biryani, beverages, tea, and light refreshments are easily available nearby.
-      </p>
+      <h2>Food & Dining</h2>
+      <p class="sub">Food is available from nearby restaurants. Guests may dine outside, bring parcel food into the property, or ask the staff on duty for assistance related to food and local options.</p>
 
       <div class="cards">
         <article class="card">
-          <div class="img"><img src="images/bf1x.jpg" alt="Nearby Food & Dining" loading="lazy"></div>
-          <div class="body">
+          <div class="img"><img src="images/bf1x.jpg" alt="Nearby food and dining" loading="lazy"></div>
+          <div class="bodyBox">
             <h3>Nearby Food & Dining</h3>
-            <p class="muted" style="margin:0">
-              Guests can enjoy simple and tasty food from nearby restaurants. You may dine outside, order parcel, or ask our staff for assistance during your stay.
-            </p>
+            <p class="muted" style="margin:0">Simple and tasty meal options are available nearby. You may dine outside, order parcel, or ask our staff for assistance.</p>
           </div>
         </article>
 
         <article class="card">
-          <div class="img"><img src="images/T2.jpg" alt="Traditional Indian Thali" loading="lazy"></div>
-          <div class="body">
+          <div class="img"><img src="images/T2.jpg" alt="Traditional Indian thali" loading="lazy"></div>
+          <div class="bodyBox">
             <h3>Traditional Indian Thali</h3>
-            <p class="muted" style="margin:0">
-              Full meal options like Indian thali with roti, curry, dal, rice, sweets, and side dishes are available from nearby restaurants for lunch or dinner.
-            </p>
+            <p class="muted" style="margin:0">Full meal options like Indian thali with roti, curry, dal, rice, sweets, and side dishes are easily available nearby.</p>
           </div>
         </article>
 
         <article class="card">
-          <div class="img"><img src="images/T3.jpg" alt="Special Curry Meal" loading="lazy"></div>
-          <div class="body">
+          <div class="img"><img src="images/T3.jpg" alt="Special curry meal" loading="lazy"></div>
+          <div class="bodyBox">
             <h3>Special Curry Meal</h3>
-            <p class="muted" style="margin:0">
-              Rich curry meals with bread, rice, and different gravy options are also available nearby for guests who prefer a more filling dining experience.
-            </p>
+            <p class="muted" style="margin:0">Rich curry meals with bread, rice, and different gravy options are available nearby for guests who prefer filling meals.</p>
           </div>
         </article>
 
         <article class="card">
-          <div class="img"><img src="images/T4.jpg" alt="Refreshing Beverages" loading="lazy"></div>
-          <div class="body">
+          <div class="img"><img src="images/T4.jpg" alt="Refreshing beverages" loading="lazy"></div>
+          <div class="bodyBox">
             <h3>Refreshing Beverages</h3>
-            <p class="muted" style="margin:0">
-              Fresh drinks and refreshing beverages are available nearby. Guests can enjoy cooling drink options and light refreshments during their stay.
-            </p>
+            <p class="muted" style="margin:0">Fresh drinks and light refreshments are available nearby for guests during their stay.</p>
           </div>
         </article>
 
         <article class="card">
-          <div class="img"><img src="images/T6.jpg" alt="Biryani & Rice Specials" loading="lazy"></div>
-          <div class="body">
+          <div class="img"><img src="images/T6.jpg" alt="Biryani and rice specials" loading="lazy"></div>
+          <div class="bodyBox">
             <h3>Biryani & Rice Specials</h3>
-            <p class="muted" style="margin:0">
-              Popular rice dishes such as biryani and other flavourful meal options are available from nearby restaurants and can be brought to the property.
-            </p>
+            <p class="muted" style="margin:0">Popular rice dishes such as biryani and other flavourful meal options are available from nearby restaurants.</p>
           </div>
         </article>
 
         <article class="card">
-          <div class="img"><img src="images/T11.jpg" alt="Tea Service" loading="lazy"></div>
-          <div class="body">
+          <div class="img"><img src="images/T11.jpg" alt="Tea service" loading="lazy"></div>
+          <div class="bodyBox">
             <h3>Tea Service</h3>
-            <p class="muted" style="margin:0">
-              Tea is available nearby and can be enjoyed as a light refreshment during your stay. Guests may also ask staff on duty for guidance or assistance.
-            </p>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="img"><img src="images/T20.jpg" alt="Hot Tea Refreshment" loading="lazy"></div>
-          <div class="body">
-            <h3>Hot Tea Refreshment</h3>
-            <p class="muted" style="margin:0">
-              Hot tea and quick refreshment options are also easily available nearby, giving guests a convenient and relaxing food and beverage experience.
-            </p>
+            <p class="muted" style="margin:0">Tea and light refreshment options are available nearby, and guests may ask staff on duty for guidance or assistance.</p>
           </div>
         </article>
       </div>
@@ -331,81 +577,93 @@
 
     <section class="section" id="payment">
       <h2>Payment</h2>
-      <p class="sub"><b>UPI + Cash accepted.</b> Please confirm availability on WhatsApp/Call before making any payment.</p>
+      <p class="sub"><b>UPI + Cash accepted.</b> Please confirm availability on WhatsApp / Call before making any payment.</p>
       <div class="two">
-        <div class="card"><div class="body">
-          <h3 style="margin:0 0 10px">UPI</h3>
-          <p style="margin:0 0 10px"><b>UPI ID:</b> abusaleh401681@oksbi</p>
-          <p class="muted" style="margin:0 0 12px">To book a room, minimum 40% advance is required. After payment, send screenshot on WhatsApp for confirmation.</p>
-          <div class="ph" style="min-height:240px"><img src="images/upi-qr.jpg.jpeg" alt="UPI QR Code" loading="lazy"></div>
-          <p class="note">Upload your QR image as <b>images/upi-qr.jpg.jpeg</b>.</p>
-        </div></div>
+        <div class="card">
+          <div class="bodyBox">
+            <h3 style="margin:0 0 10px">UPI Payment</h3>
+            <p style="margin:0 0 10px"><b>UPI ID:</b> abusaleh401681@oksbi</p>
+            <p class="muted" style="margin:0 0 12px">To book a room, a minimum 40% advance is required. After payment, kindly send the screenshot on WhatsApp for confirmation.</p>
+            <div class="img" style="height:280px; border-radius:12px; overflow:hidden; border:1px solid var(--border);"><img src="images/upi-qr.jpg.jpeg" alt="UPI QR Code" loading="lazy"></div>
+            <p class="note">Upload your QR image as <b>images/upi-qr.jpg.jpeg</b>.</p>
+          </div>
+        </div>
 
-        <div class="card"><div class="body">
-          <h3 style="margin:0 0 10px">Advance, Refund & Charges</h3>
-          <ul>
-            <li><b>Minimum advance required:</b> 40% advance is required to book a room.</li>
-            <li><b>Advance adjustment:</b> once paid, the advance amount will be adjusted in the final room rent.</li>
-            <li><b>Advance refund policy:</b> once paid, the advance cannot be refunded back.</li>
-            <li><b>No-show / cancellation:</b> in case of no show or cancellation, the advance amount will not be refunded back.</li>
-            <li><b>Extra guest:</b> ₹500 per guest per night (mattress).</li>
-            <li><b>Early check-in / late checkout:</b> subject to availability & chargeable.</li>
-            <li><b>No GST</b></li>
-          </ul>
-        </div></div>
+        <div class="card">
+          <div class="bodyBox">
+            <h3 style="margin:0 0 10px">Advance, Refund & Charges</h3>
+            <ul>
+              <li><b>Minimum advance required:</b> 40% advance is required to book a room.</li>
+              <li><b>Advance adjustment:</b> once paid, the advance amount will be adjusted in the final room rent.</li>
+              <li><b>Advance refund policy:</b> once paid, the advance cannot be refunded back.</li>
+              <li><b>No-show / cancellation:</b> in case of no-show or cancellation, the advance amount will not be refunded back.</li>
+              <li><b>Extra guest:</b> ₹500 per guest per night (mattress).</li>
+              <li><b>Early check-in / late check-out:</b> subject to availability and chargeable.</li>
+              <li><b>No GST</b></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="policies">
       <h2>Rules & Check-in</h2>
       <div class="two">
-        <div class="card"><div class="body">
-          <h3 style="margin:0 0 10px">ID & House Rules</h3>
-          <ul>
-            <li><b>Unmarried couples:</b> allowed.</li>
-            <li><b>Government ID:</b> required for all guests at check-in.</li>
-            <li><b>Local ID:</b> allowed.</li>
-            <li><b>Foreigners:</b> allowed.</li>
-            <li><b>Visitors in room:</b> allowed, but visitors must have a valid government-issued ID and it must be shown at the time of visitor check-in.</li>
-            <li><b>Outside food & beverages:</b> allowed.</li>
-            <li><b>Smoking:</b> allowed in rooms & terrace; not allowed in reception.</li>
-            <li><b>Alcohol:</b> allowed.</li>
-            <li><b>Staff:</b> 24×7 assistance available.</li>
-          </ul>
-        </div></div>
+        <div class="card">
+          <div class="bodyBox">
+            <h3 style="margin:0 0 10px">ID & House Rules</h3>
+            <ul>
+              <li><b>Unmarried couples:</b> allowed</li>
+              <li><b>Government ID:</b> required for all guests at check-in</li>
+              <li><b>Local ID:</b> allowed</li>
+              <li><b>Foreigners:</b> allowed</li>
+              <li><b>Visitors in room:</b> allowed, but visitors must show a valid government-issued ID</li>
+              <li><b>Outside food & beverages:</b> allowed</li>
+              <li><b>Smoking:</b> allowed in rooms and terrace, not allowed in reception</li>
+              <li><b>Alcohol:</b> allowed</li>
+              <li><b>Staff assistance:</b> available 24×7</li>
+            </ul>
+          </div>
+        </div>
 
-        <div class="card"><div class="body">
-          <h3 style="margin:0 0 10px">Location</h3>
-          <p class="muted" style="margin:0 0 12px"><b>10/1/1, Collin Lane, Park Street Area, Kolkata – 700016</b></p>
-          <iframe title="Map" src="https://www.google.com/maps?q=Saba%20Guest%20House%20Kolkata&output=embed"
-                  width="100%" height="260" style="border:0;border-radius:12px" loading="lazy"></iframe>
-        </div></div>
+        <div class="card">
+          <div class="bodyBox">
+            <h3 style="margin:0 0 10px">Location</h3>
+            <p class="muted" style="margin:0 0 12px"><b>10/1/1, Collin Lane, Park Street Area, Kolkata – 700016</b></p>
+            <iframe title="Map" src="https://www.google.com/maps?q=Saba%20Guest%20House%20Kolkata&output=embed" width="100%" height="260" style="border:0; border-radius:12px" loading="lazy"></iframe>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="contact">
       <h2>Contact</h2>
-      <p class="sub">For fastest confirmation, message on WhatsApp.</p>
+      <p class="sub">For the fastest confirmation, message us on WhatsApp.</p>
       <div class="two">
-        <div class="card"><div class="body">
-          <h3 style="margin:0 0 8px">WhatsApp / Call</h3>
-          <p style="margin:0 0 12px"><b>+91 6289271990</b></p>
-          <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20a%20room.%20Please%20confirm%20availability." target="_blank" rel="noopener">Chat on WhatsApp</a>
-        </div></div>
-        <div class="card"><div class="body">
-          <h3 style="margin:0 0 8px">Email</h3>
-          <p style="margin:0 0 12px"><b>sabaguesthouse69@gmail.com</b></p>
-          <a class="btn primary" href="mailto:sabaguesthouse69@gmail.com">Send Email</a>
-        </div></div>
+        <div class="card">
+          <div class="bodyBox">
+            <h3 style="margin:0 0 8px">WhatsApp / Call</h3>
+            <p style="margin:0 0 12px"><b>+91 6289271990</b></p>
+            <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20a%20room.%20Please%20confirm%20availability." target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="bodyBox">
+            <h3 style="margin:0 0 8px">Email</h3>
+            <p style="margin:0 0 12px"><b>sabaguesthouse69@gmail.com</b></p>
+            <a class="btn primary" href="mailto:sabaguesthouse69@gmail.com">Send Email</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+    <div class="wrap" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center;">
       <div>
-        <div style="font-weight:900;color:#fff">Saba Guest House</div>
-        <div style="margin-top:6px">WhatsApp/Call: <a href="https://wa.me/916289271990" target="_blank" rel="noopener">+91 6289271990</a> • Email: <a href="mailto:sabaguesthouse69@gmail.com">sabaguesthouse69@gmail.com</a></div>
+        <div style="font-weight:900; color:#fff">Saba Guest House</div>
+        <div style="margin-top:6px">WhatsApp / Call: <a href="https://wa.me/916289271990" target="_blank" rel="noopener">+91 6289271990</a> • Email: <a href="mailto:sabaguesthouse69@gmail.com">sabaguesthouse69@gmail.com</a></div>
       </div>
       <div style="opacity:.9">© 2026 Saba Guest House</div>
     </div>
@@ -415,24 +673,51 @@
 
   <script>
     const WA_BASE = "https://wa.me/916289271990?text=";
-    function buildMsg(){
-      const ci = document.getElementById("checkin").value || "(not selected)";
-      const co = document.getElementById("checkout").value || "(not selected)";
-      const g  = document.getElementById("guests").value || "2";
+
+    function formatDateInput(value) {
+      if (!value) return "(not selected)";
+      return value;
+    }
+
+    function buildMsg() {
+      const ci = formatDateInput(document.getElementById("checkin").value);
+      const co = formatDateInput(document.getElementById("checkout").value);
+      const g = document.getElementById("guests").value || "2";
       const room = document.getElementById("roomOption").value || "Room";
       const notes = (document.getElementById("notes").value || "").trim();
-      let msg = `Hello Saba Guest House, I want to book: ${room}. Check-in: ${ci}, Check-out: ${co}, Guests: ${g}.`;
+
+      let msg = `Hello Saba Guest House, I want to book ${room}. Check-in: ${ci}, Check-out: ${co}, Guests: ${g}.`;
       msg += ` Minimum 40% advance is required to book a room.`;
       msg += ` Advance once paid cannot be refunded and will be adjusted in the room rent.`;
       msg += ` In case of no-show or cancellation, advance amount will not be refunded back.`;
-      msg += ` Max guests per room is 2. Extra guest charge ₹500 per night (mattress).`;
-      msg += ` Early check-in/late checkout subject to availability & chargeable.`;
-      msg += ` Please confirm availability before payment.`;
-      if(notes) msg += ` Notes: ${notes}`;
+      msg += ` Max guests per room is 2.`;
+      msg += ` Extra guest charge is ₹500 per night (mattress).`;
+      msg += ` Early check-in and late check-out are subject to availability and chargeable.`;
+      msg += ` Please confirm availability before making payment.`;
+
+      if (notes) msg += ` Notes: ${notes}`;
       return msg;
     }
-    function previewMsg(){ alert(buildMsg()); }
-    function sendWA(){ window.open(WA_BASE + encodeURIComponent(buildMsg()), "_blank", "noopener"); }
+
+    function previewMsg() {
+      alert(buildMsg());
+    }
+
+    function sendWA() {
+      window.open(WA_BASE + encodeURIComponent(buildMsg()), "_blank", "noopener");
+    }
+
+    const checkin = document.getElementById("checkin");
+    const checkout = document.getElementById("checkout");
+
+    checkin.addEventListener("change", () => {
+      if (checkin.value) {
+        checkout.min = checkin.value;
+        if (checkout.value && checkout.value < checkin.value) {
+          checkout.value = checkin.value;
+        }
+      }
+    });
   </script>
 </body>
 </html>
