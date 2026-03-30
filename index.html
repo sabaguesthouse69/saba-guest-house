@@ -29,6 +29,7 @@
       color: var(--text);
       background: #f7f8fb;
     }
+
     img { max-width: 100%; display: block; }
     a { color: inherit; text-decoration: none; }
     .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
@@ -234,6 +235,39 @@
       object-fit: cover;
     }
 
+    .roomGallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      padding: 10px;
+      background: #fff;
+      border-bottom: 1px solid #eef0f5;
+    }
+
+    .roomGallery img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #eef0f5;
+    }
+
+    .roomGallery.five img:first-child {
+      grid-column: 1 / -1;
+      height: 240px;
+    }
+
+    @media (max-width: 600px) {
+      .roomGallery {
+        grid-template-columns: 1fr;
+      }
+
+      .roomGallery.five img:first-child {
+        grid-column: auto;
+        height: 170px;
+      }
+    }
+
     .bodyBox { padding: 14px; }
     .card h3 { margin: 0 0 6px; font-size: 18px; }
 
@@ -374,8 +408,7 @@
               <div>
                 <label for="roomOption">Room Option</label>
                 <select id="roomOption" required>
-                  <option value="AC Double Bed Room (₹1100/night)">AC Double Bed Room (₹1100/night)</option>
-                  <option value="Non-AC Double Bed Room (₹800/night)">Non-AC Double Bed Room (₹800/night)</option>
+                  <option value="AC / Non-AC Double Bed Room">AC / Non-AC Double Bed Room</option>
                   <option value="Small Single Bed Room (₹600/night)">Small Single Bed Room (₹600/night)</option>
                   <option value="Small Compact Double Room (₹700/night)">Small Compact Double Room (₹700/night)</option>
                 </select>
@@ -384,7 +417,7 @@
 
             <div style="margin-top:10px">
               <label for="notes">Notes (optional)</label>
-              <input id="notes" type="text" placeholder="Example: late arrival, floor preference, extra mattress...">
+              <input id="notes" type="text" placeholder="Example: AC or Non-AC preference, late arrival, floor preference, extra mattress...">
             </div>
 
             <div class="btnRow">
@@ -395,6 +428,8 @@
             <div class="note">
               <div><b>Check-in:</b> 12:00 PM • <b>Check-out:</b> 11:00 AM</div>
               <div><b>Max guests:</b> 2 per room</div>
+              <div><b>AC Room:</b> ₹1100 per night</div>
+              <div><b>Non-AC Room:</b> ₹800 per night</div>
               <div><b>Extra guest:</b> ₹500 per guest per night (mattress)</div>
               <div><b>Minimum advance:</b> 40% advance is required to book a room</div>
               <div><b>Advance policy:</b> once paid, the advance cannot be refunded back and will be adjusted in the room rent</div>
@@ -419,37 +454,27 @@
 
       <div class="cards">
         <article class="card">
-          <div class="img"><img src="images/hero.jpg.jpeg" alt="AC Double Bed Room" loading="lazy"></div>
-          <div class="bodyBox">
-            <h3>AC Double Bed Room</h3>
-            <div class="tags">
-              <span class="tag"><b>₹1100</b> / night</span>
-              <span class="tag">Double Bed</span>
-              <span class="tag">Max 2 Guests</span>
-            </div>
-            <p class="muted" style="margin:0">
-              Clean and comfortable AC double bed room for a relaxed stay. Government-issued ID is mandatory at check-in.
-            </p>
-            <div class="miniBtn">
-              <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20an%20AC%20Double%20Bed%20Room.%20Please%20confirm%20availability." target="_blank" rel="noopener">Book AC Room on WhatsApp</a>
-            </div>
+          <div class="roomGallery five">
+            <img src="images/R1X.jpeg" alt="AC and Non-AC Double Bed Room photo 1" loading="lazy">
+            <img src="images/R2X.jpeg" alt="AC and Non-AC Double Bed Room photo 2" loading="lazy">
+            <img src="images/R3X.jpeg" alt="AC and Non-AC Double Bed Room photo 3" loading="lazy">
+            <img src="images/R4X.jpeg" alt="AC and Non-AC Double Bed Room photo 4" loading="lazy">
+            <img src="images/R5X.jpeg" alt="AC and Non-AC Double Bed Room photo 5" loading="lazy">
           </div>
-        </article>
 
-        <article class="card">
-          <div class="img"><img src="images/room-1.jpg.jpeg" alt="Non-AC Double Bed Room" loading="lazy"></div>
           <div class="bodyBox">
-            <h3>Non-AC Double Bed Room</h3>
+            <h3>AC & Non-AC Double Bed Rooms</h3>
             <div class="tags">
-              <span class="tag"><b>₹800</b> / night</span>
+              <span class="tag"><b>AC ₹1100</b> / night</span>
+              <span class="tag"><b>Non-AC ₹800</b> / night</span>
               <span class="tag">Double Bed</span>
               <span class="tag">Max 2 Guests</span>
             </div>
             <p class="muted" style="margin:0">
-              Clean and budget-friendly non-AC double bed room for a comfortable stay. Government-issued ID is mandatory at check-in.
+              Clean and comfortable double bed room options are available in both AC and Non-AC categories. Kindly mention your AC or Non-AC preference while sending your booking request on WhatsApp. Government-issued ID is mandatory at check-in.
             </p>
             <div class="miniBtn">
-              <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20a%20Non-AC%20Double%20Bed%20Room.%20Please%20confirm%20availability." target="_blank" rel="noopener">Book Non-AC Room on WhatsApp</a>
+              <a class="btn whats" href="https://wa.me/916289271990?text=Hello%20Saba%20Guest%20House,%20I%20want%20to%20book%20an%20AC%20or%20Non-AC%20Double%20Bed%20Room.%20Please%20confirm%20availability." target="_blank" rel="noopener">Book AC / Non-AC Room on WhatsApp</a>
             </div>
           </div>
         </article>
@@ -889,6 +914,8 @@
       const notes = (document.getElementById("notes").value || "").trim();
 
       let msg = `Hello Saba Guest House, I want to book ${room}. Check-in: ${ci}, Check-out: ${co}, Guests: ${g}.`;
+      msg += ` For AC Double Bed Room the price is ₹1100 per night, and for Non-AC Double Bed Room the price is ₹800 per night.`;
+      msg += ` Kindly confirm availability and room type preference.`;
       msg += ` Minimum 40% advance is required to book a room.`;
       msg += ` Advance once paid cannot be refunded and will be adjusted in the room rent.`;
       msg += ` In case of no-show or cancellation, advance amount will not be refunded back.`;
